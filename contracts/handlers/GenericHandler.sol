@@ -126,7 +126,7 @@ contract GenericHandler is IGenericHandler {
 
         _setResource(resourceID, contractAddress, depositFunctionSig, executeFunctionSig);
     }
-
+    //test
     /**
         @notice A deposit is initiatied by making a deposit in the Bridge contract.
         @param destinationChainID Chain ID deposit is expected to be bridged to.
