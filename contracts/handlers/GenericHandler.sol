@@ -94,6 +94,7 @@ contract GenericHandler is IGenericHandler {
         - _depositer Address that initially called {deposit} in the Bridge contract.
         - _metaData Data to be passed to method executed in corresponding {resourceID} contract.
     */
+    
     function getDepositRecord(uint64 depositNonce, uint8 destId) external view returns (DepositRecord memory) {
         return _depositRecords[destId][depositNonce];
     }
