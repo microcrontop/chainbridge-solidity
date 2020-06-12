@@ -326,7 +326,7 @@ contract Bridge is Pausable, AccessControl {
         _depositRecords[destinationChainID][depositNonce] = data;
 
         IDepositExecute depositHandler = IDepositExecute(handler);
-        depositHandler.deposit(destinationChainID, depositNonce, msg.sender, data);
+        depositHandler.deposit(destinationChainID, resourceID, depositNonce, msg.sender, data);
 
         emit Deposit(destinationChainID, resourceID, depositNonce);
     }
